@@ -11,7 +11,7 @@ CREATE TABLE products (
   PRIMARY KEY (id)
 );
 
-INSERT INTO products (product_name,department_name, price)
+INSERT INTO products (product_name,department_name, price, stock_quantity)
 VALUES ("Jordan 11", "sneakers", 100.00, 200),
         ("bally loafer","shoes",200.00, 250),
         ("Geox","recreation", 750.00,75, 356),
