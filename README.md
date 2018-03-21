@@ -25,7 +25,7 @@ var inquirer = require("inquirer");<br>
 var Table = require("easy-table");<br>
 var CFonts = require('cfonts');<br>
 
-Make sure these are installed in the folder you are working out off.
+Make sure these are installed in the folder you are working.
 
 Next, finished the rest of connection to the database you are using, then start writing the code 
 that you want to use and manipulate within the database.
