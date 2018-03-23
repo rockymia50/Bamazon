@@ -102,9 +102,9 @@ function checkInventory(answer, id) {
     // query the database to see if user response is fillable
     var query = "SELECT * FROM products WHERE id = ?";
     connection.query(query, [id], function (err, res) {
-        console.log(res)
-        // determine if we can get the order
-        if ( res[0].stock_quantity > answer.quantity) {
+        // console.log(res)
+        // determine if we can get the order 
+        if ( res[0].stock_quantity > parseInt(answer.quantity)) {
 
             // if return true update stock_quantity
             var userQuantity = res[0].stock_quantity - answer.quantity;
@@ -119,9 +119,10 @@ function checkInventory(answer, id) {
                   id: id
                 }
               ],
-              function(error) {
+              function(error, data) {
                 if (error) throw err;
                 console.log("Order placed successfully!");
+                console.log(data)
                 runSearch();
               }
             );

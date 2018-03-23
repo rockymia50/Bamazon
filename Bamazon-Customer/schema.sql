@@ -23,6 +23,6 @@ VALUES ("Jordan 11", "sneakers", 100.00, 200),
         ("dining chair","furniture", 150.00,400),
         ("Iphone","electronics", 150.00,120),
         ("coffee table","furniture", 150.00,100),
-        ("bunny","toys", 150.00,1),
+        ("bunny","toys", 150.00,1)
 
 
